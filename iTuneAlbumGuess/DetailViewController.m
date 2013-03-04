@@ -254,17 +254,15 @@
         rvc.secondGuessItem = [[self secondGuessLabel] text];
         rvc.thirdGuessItem = [[self thirdGuessLabel] text];
         rvc.albumTitelAndArtistArray = facitArray;
-        
-        NSLog(@"firstGuessLabel: %@", self.firstGuessLabel);
     }
 }
 
 - (IBAction)clearButton:(id)sender {
 [[self firstGuessLabel] setText:@""];
-[[self firstGuessLabel] setTextColor:[UIColor redColor]];
+[[self firstGuessNumberLabel] setTextColor:[UIColor redColor]];
 [[self secondGuessLabel] setText:@""];
-[[self secondGuessLabel] setTextColor:[UIColor whiteColor]];
+[[self secondGuessNumberLabel] setTextColor:[UIColor whiteColor]];
 [[self thirdGuessLabel] setText:@""];
-[[self thirdGuessLabel] setTextColor:[UIColor whiteColor]];
+[[self thirdGuessNumnberLabel] setTextColor:[UIColor whiteColor]];
 }
 @end

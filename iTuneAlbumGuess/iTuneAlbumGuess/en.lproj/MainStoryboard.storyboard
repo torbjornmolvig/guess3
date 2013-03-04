@@ -352,9 +352,12 @@
                     <navigationItem key="navigationItem" title="Gissa listan" id="Oal-Fc-df0"/>
                     <connections>
                         <outlet property="firstGuessLabel" destination="Ixg-E2-IK6" id="qZq-Bi-Y9f"/>
+                        <outlet property="firstGuessNumberLabel" destination="Trl-4e-d6U" id="ri6-cH-JWY"/>
                         <outlet property="myTableView" destination="Yhj-e3-j6V" id="0uc-fV-asF"/>
                         <outlet property="secondGuessLabel" destination="iqQ-py-hpd" id="G6N-8m-c8P"/>
+                        <outlet property="secondGuessNumberLabel" destination="gda-Xi-iIU" id="Y31-CN-kpm"/>
                         <outlet property="thirdGuessLabel" destination="Azc-B7-Zah" id="7P0-an-HjB"/>
+                        <outlet property="thirdGuessNumnberLabel" destination="OWx-B4-G4g" id="ef3-BV-v03"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YJd-nr-cQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -380,6 +383,43 @@
             <point key="canvasLocation" x="16" y="706"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="AlbumCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlbumCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="albumImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="albumNameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="artistNameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="clearButton:"/>
+                <relationship kind="outlet" name="firstGuessLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="firstGuessNumberLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="myTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="secondGuessLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="secondGuessNumberLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="thirdGuessLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="thirdGuessNumnberLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ResultViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ResultViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="firstResultLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="secondResultLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="thirdResultLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
