@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Meny-->
+        <!--View Controller - Top3-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
@@ -107,7 +107,7 @@
                             <constraint firstItem="UYG-jy-aMn" firstAttribute="trailing" secondItem="k1V-he-Dam" secondAttribute="trailing" type="default" id="te7-vk-u9P"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Meny" id="dax-fg-j42"/>
+                    <navigationItem key="navigationItem" title="Top3" id="dax-fg-j42"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
