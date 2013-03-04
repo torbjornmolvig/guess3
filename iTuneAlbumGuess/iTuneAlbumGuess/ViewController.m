@@ -44,6 +44,7 @@
         DetailViewController *vc = (DetailViewController *) [segue destinationViewController];
         NSString *selectedCountryHttpString = @"http://itunes.apple.com/se/rss/topalbums/limit=10/json";
         vc.countryItem = selectedCountryHttpString;
+        [vc setTitle:@"Svenska listan"];
     }
     
     if ([[segue identifier] isEqualToString:@"toUsaList"])
@@ -51,6 +52,8 @@
         DetailViewController *vc = (DetailViewController *) [segue destinationViewController];
         NSString *selectedCountryHttpString = @"http://itunes.apple.com/us/rss/topalbums/limit=10/json";
         vc.countryItem = selectedCountryHttpString;
+        [vc setTitle:@"Amerikanska listan"];
+
     }
     
     if ([[segue identifier] isEqualToString:@"toEnglishList"])
@@ -58,8 +61,8 @@
         DetailViewController *vc = (DetailViewController *) [segue destinationViewController];
         NSString *selectedCountryHttpString = @"http://itunes.apple.com/gb/rss/topalbums/limit=10/json";
         vc.countryItem = selectedCountryHttpString;
-        
-        
+        [vc setTitle:@"Engelska listan"];
+
     }
 }
 
