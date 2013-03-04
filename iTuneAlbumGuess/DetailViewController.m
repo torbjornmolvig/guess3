@@ -71,6 +71,10 @@
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
     
+    // Gör så att firstGuessNumberLabel blir röd från början.
+    [[self firstGuessNumberLabel] setTextColor:[UIColor redColor]];
+
+    
     
 }
 
@@ -97,8 +101,6 @@
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    
-    
     NSDictionary *allDataDictionary = [NSJSONSerialization JSONObjectWithData:webData options:0 error:nil];
     NSDictionary *feed = [allDataDictionary objectForKey:@"feed"];
     NSArray *arrayOffEntry = [feed objectForKey:@"entry"];
@@ -218,20 +220,20 @@
             // Låt denna avkommenterade raden vara kvar. Vi kanske behöver den i framtiden.
 //            [[self firstGuessLabel] setText:[@"1. " stringByAppendingString:guessText]];
             [[self firstGuessLabel] setText:guessText];
-            [[self secondGuessLabel] setTextColor:[UIColor redColor]];
-            [[self firstGuessLabel] setTextColor:[UIColor whiteColor]];
+            [[self secondGuessNumberLabel] setTextColor:[UIColor redColor]];
+            [[self firstGuessNumberLabel] setTextColor:[UIColor whiteColor]];
             break;
             
         case 1:
             [[self secondGuessLabel] setText:guessText];
-            [[self thirdGuessLabel] setTextColor:[UIColor redColor]];
-            [[self secondGuessLabel] setTextColor:[UIColor whiteColor]];
+            [[self thirdGuessNumnberLabel] setTextColor:[UIColor redColor]];
+            [[self secondGuessNumberLabel] setTextColor:[UIColor whiteColor]];
             break;
             
         case 2:
             [[self thirdGuessLabel] setText:guessText];
-            [[self firstGuessLabel] setTextColor:[UIColor redColor]];
-            [[self thirdGuessLabel] setTextColor:[UIColor whiteColor]];
+            [[self firstGuessNumberLabel] setTextColor:[UIColor redColor]];
+            [[self thirdGuessNumnberLabel] setTextColor:[UIColor whiteColor]];
             break;
             
         default:

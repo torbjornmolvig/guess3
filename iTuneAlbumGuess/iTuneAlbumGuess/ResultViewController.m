@@ -26,7 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"_firstGuessItem: %@", _firstGuessItem);
     
     // Sätter resultatLablarna.
     [[self firstResultLabel] setText:_firstGuessItem];
