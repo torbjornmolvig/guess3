@@ -245,16 +245,6 @@
     }
 } // eof method tableView:didSelectRowAtIndexPath.
 
-//- (IBAction)clearButton:(id)sender
-//{
-//    [[self firstGuessLabel] setText:@"1."];
-//    [[self firstGuessLabel] setTextColor:[UIColor redColor]];
-//    [[self secondGuessLabel] setText:@"2."];
-//    [[self secondGuessLabel] setTextColor:[UIColor whiteColor]];
-//    [[self thirdGuessLabel] setText:@"3."];
-//    [[self thirdGuessLabel] setTextColor:[UIColor whiteColor]];
-//}
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"toResultViewController"])
@@ -270,5 +260,11 @@
 }
 
 - (IBAction)clearButton:(id)sender {
+[[self firstGuessLabel] setText:@""];
+[[self firstGuessLabel] setTextColor:[UIColor redColor]];
+[[self secondGuessLabel] setText:@""];
+[[self secondGuessLabel] setTextColor:[UIColor whiteColor]];
+[[self thirdGuessLabel] setText:@""];
+[[self thirdGuessLabel] setTextColor:[UIColor whiteColor]];
 }
 @end
