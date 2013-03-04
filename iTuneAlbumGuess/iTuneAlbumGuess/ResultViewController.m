@@ -28,26 +28,48 @@
     [super viewDidLoad];
     
     // Sätter resultatLablarna.
-    [[self firstResultLabel] setText:_firstGuessItem];
-    [[self secondResultLabel] setText:_secondGuessItem];
-    [[self thirdResultLabel] setText:_thirdGuessItem];
+//    [[self firstResultLabel] setText:_firstGuessItem];
+    [self performSelector:@selector(labelOne) withObject:nil afterDelay:0.75];
+    [self performSelector:@selector(labelTwo) withObject:nil afterDelay:1.5];
+    [self performSelector:@selector(labelThree) withObject:nil afterDelay:2.25];
+
+    //    [[self secondResultLabel] setText:_secondGuessItem];
+    //    [[self thirdResultLabel] setText:_thirdGuessItem];
     
     // Kontrollerar svaren med rätt facit och gör i så fall texten grön.
     if ([[self.firstResultLabel text] isEqualToString:_albumTitelAndArtistArray[0]])
     {
         [[self firstResultLabel] setTextColor:[UIColor greenColor]];
     }
+
     
+}
+
+-(void)labelOne
+{
+    [[self firstResultLabel] setText:_firstGuessItem];
+    if ([[self.firstResultLabel text] isEqualToString:_albumTitelAndArtistArray[0]])
+    {
+        [[self firstResultLabel] setTextColor:[UIColor greenColor]];
+    }
+}
+
+-(void)labelTwo
+{
+    [[self secondResultLabel] setText:_secondGuessItem];
     if ([[self.secondResultLabel text] isEqualToString:_albumTitelAndArtistArray[1]])
     {
         [[self secondResultLabel] setTextColor:[UIColor greenColor]];
     }
-    
+}
+
+-(void)labelThree
+{
+    [[self thirdResultLabel] setText:_thirdGuessItem];
     if ([[self.thirdResultLabel text] isEqualToString:_albumTitelAndArtistArray[2]])
     {
         [[self thirdResultLabel] setTextColor:[UIColor greenColor]];
     }
-	
 }
 
 - (void)didReceiveMemoryWarning
