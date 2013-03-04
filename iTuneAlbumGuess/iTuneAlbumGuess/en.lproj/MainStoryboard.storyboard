@@ -292,7 +292,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clearButton:" destination="AdB-6C-3Ki" eventType="touchUpInside" id="Tk2-Sv-j1f"/>
+                                    <action selector="clearButton:" destination="AdB-6C-3Ki" eventType="touchUpInside" id="38N-wa-NJJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwN-5r-3GF">

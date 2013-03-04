@@ -18,7 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *secondGuessLabel;
 @property (weak, nonatomic) IBOutlet UILabel *thirdGuessLabel;
 
-
 - (IBAction)clearButton:(id)sender;
+
+
 
 @end
