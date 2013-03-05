@@ -13,6 +13,7 @@
 		849C5AA216E6015F002118E3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 849C5AA116E6015F002118E3 /* Default.png */; };
 		849C5AA416E60162002118E3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849C5AA316E60162002118E3 /* Default@2x.png */; };
 		849C5AA816E60409002118E3 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 849C5AA716E60409002118E3 /* background.png */; };
+		849C5AAA16E6055A002118E3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849C5AA916E6055A002118E3 /* Default-568h@2x.png */; };
 		84C2BDAE16E15F1400704028 /* blue_button_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C2BDAC16E15F1400704028 /* blue_button_press.png */; };
 		84C2BDAF16E15F1400704028 /* blue_button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C2BDAD16E15F1400704028 /* blue_button_pressed.png */; };
 		84D4F27B16DF680A00612274 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D4F27A16DF680A00612274 /* UIKit.framework */; };
@@ -48,6 +49,7 @@
 		849C5AA116E6015F002118E3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		849C5AA316E60162002118E3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		849C5AA716E60409002118E3 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		849C5AA916E6055A002118E3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		84C2BDAC16E15F1400704028 /* blue_button_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_button_press.png; sourceTree = "<group>"; };
 		84C2BDAD16E15F1400704028 /* blue_button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_button_pressed.png; sourceTree = "<group>"; };
 		84D4F27616DF680A00612274 /* iTuneAlbumGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTuneAlbumGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 		84D4F26B16DF680A00612274 = {
 			isa = PBXGroup;
 			children = (
+				849C5AA916E6055A002118E3 /* Default-568h@2x.png */,
 				849C5AA316E60162002118E3 /* Default@2x.png */,
 				849C5AA116E6015F002118E3 /* Default.png */,
 				8478DD8A16E4E5A700068BD5 /* icon@2x.png */,
@@ -274,6 +277,7 @@
 				849C5AA216E6015F002118E3 /* Default.png in Resources */,
 				849C5AA416E60162002118E3 /* Default@2x.png in Resources */,
 				849C5AA816E60409002118E3 /* background.png in Resources */,
+				849C5AAA16E6055A002118E3 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
