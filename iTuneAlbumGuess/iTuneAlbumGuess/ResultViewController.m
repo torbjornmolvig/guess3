@@ -28,7 +28,9 @@
     [super viewDidLoad];
     
     // Sätter resultatLablarna.
-//    [[self firstResultLabel] setText:_firstGuessItem];
+    [[self firstResultLabel] setTextColor:[UIColor redColor]];
+    [[self secondResultLabel] setTextColor:[UIColor redColor]];
+    [[self thirdResultLabel] setTextColor:[UIColor redColor]];
     [self performSelector:@selector(labelOne) withObject:nil afterDelay:0.75];
     [self performSelector:@selector(labelTwo) withObject:nil afterDelay:1.5];
     [self performSelector:@selector(labelThree) withObject:nil afterDelay:2.25];

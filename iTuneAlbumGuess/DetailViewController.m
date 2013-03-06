@@ -23,6 +23,8 @@
     NSMutableArray *facitPhotoArray;
     NSMutableArray *facitArtistArray;
     Boolean *facitButtonClicked;
+    NSString *guessText;
+    int numberCounter;
 
     int clickCounter;
 }
@@ -127,7 +129,6 @@
         NSString *label6 = [artist objectForKey:@"label"];
         
         [facitArtistArray addObject:label6];
-        NSLog(@"artist: %@", facitArtistArray);
     }
     
     // Calling the array´s shufflemethod.
@@ -208,7 +209,13 @@
             adjusted = [test substringToIndex:range.location];
         }
 
-        cell.albumNameLabel.text = adjusted;//[array objectAtIndex:indexPath.row];
+        // [[self firstGuessLabel] setText:[@"1. " stringByAppendingString:guessText]];
+
+        numberCounter++;
+        NSString *temp = [NSString stringWithFormat:@"%d ", numberCounter];
+        temp = [temp stringByAppendingString:adjusted];
+        
+        cell.albumNameLabel.text = temp;//[array objectAtIndex:indexPath.row];
         
         cell.artistNameLabel.text = [facitArtistArray objectAtIndex:indexPath.row];
         
@@ -247,7 +254,15 @@
 // När ett album är klickat/valt ska det skrivas ut i guessLabel:arna.
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *guessText = [array objectAtIndex:indexPath.row];
+    if (facitButtonClicked)
+    {
+        guessText = [facitTitleArray objectAtIndex:indexPath.row];
+    }
+    
+    else
+    {
+        guessText = [array objectAtIndex:indexPath.row]; 
+    }
     
     switch (clickCounter)
     {
