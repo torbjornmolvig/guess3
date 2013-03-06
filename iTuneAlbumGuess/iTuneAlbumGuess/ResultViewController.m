@@ -106,8 +106,6 @@
         default:
             break;
     }
-    
-    
 }
 
 - (void)didReceiveMemoryWarning

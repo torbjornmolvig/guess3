@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *secondGuessNumberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *thirdGuessNumnberLabel;
 
+- (IBAction)facitButton:(id)sender;
 
 - (IBAction)clearButton:(id)sender;
 

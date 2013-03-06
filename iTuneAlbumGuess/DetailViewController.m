@@ -73,9 +73,6 @@
     
     // Gör så att firstGuessNumberLabel blir röd från början.
     [[self firstGuessNumberLabel] setTextColor:[UIColor redColor]];
-
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -105,7 +102,7 @@
     NSDictionary *feed = [allDataDictionary objectForKey:@"feed"];
     NSArray *arrayOffEntry = [feed objectForKey:@"entry"];
     
-    // Några rader för att få ut den riktiga listan (alltså listan i rätt ordning).
+    // Några kodrader för att få ut den riktiga listan (alltså listan i rätt ordning).
     for (NSDictionary *diction in arrayOffEntry)
     {
         NSDictionary *title = [diction objectForKey:@"title"];
@@ -139,8 +136,6 @@
         [artistArray addObject:label3];
         
         [[self myTableView] reloadData];
-        
-//        NSLog(@"Artist: %@", artistArray);
     }
 }
 
@@ -177,7 +172,6 @@
         cell = [[AlbumCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    
     UIView *bgColorView = [[UIView alloc] init];
     [bgColorView setBackgroundColor:[UIColor colorWithRed:2/255.0 green:38/255.0 blue:52/255.0 alpha:1]];
 //       [bgColorView setBackgroundColor:[UIColor blackColor]];
@@ -185,7 +179,6 @@
     
     // Tar bort all text efter bindestreck.
     NSString *adjusted;
-    
     NSString *rawAlbumNameLabel = [array objectAtIndex:indexPath.row];
     NSString * test = [NSString stringWithString:rawAlbumNameLabel];
     NSRange range = [test rangeOfString:@"-"];
@@ -197,8 +190,6 @@
     cell.albumNameLabel.text = adjusted;//[array objectAtIndex:indexPath.row];
 
     cell.artistNameLabel.text = [artistArray objectAtIndex:indexPath.row];
-//    NSLog(@"artistLabel %@", artistArray);
-
 
     // Photos
     AlbumsPhoto *photo = photosArray[indexPath.row];
@@ -206,7 +197,6 @@
     [cell.albumImageView setImageWithURL:[NSURL URLWithString:photoString]];
     
     return cell;
-    
 }
 
 // När ett album är klickat/valt ska det skrivas ut i guessLabel:arna.
@@ -258,6 +248,48 @@
         rvc.albumTitelAndArtistArray = facitArray;
     }
 }
+
+- (IBAction)facitButton:(id)sender
+{
+    [self facitTableView:<#(UITableView *)#> cellForRowAtIndexPath:<#(NSIndexPath *)#>]
+} // eof method facitButton.
+
+- (UITableViewCell *)facitTableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    AlbumCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (!cell)
+    {
+        cell = [[AlbumCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+    
+    UIView *bgColorView = [[UIView alloc] init];
+    [bgColorView setBackgroundColor:[UIColor colorWithRed:2/255.0 green:38/255.0 blue:52/255.0 alpha:1]];
+    //       [bgColorView setBackgroundColor:[UIColor blackColor]];
+    [cell setSelectedBackgroundView:bgColorView];
+    
+    // Tar bort all text efter bindestreck.
+    NSString *adjusted;
+    NSString *rawAlbumNameLabel = [array objectAtIndex:indexPath.row];
+    NSString * test = [NSString stringWithString:rawAlbumNameLabel];
+    NSRange range = [test rangeOfString:@"-"];
+    if (range.length > 0)
+    {
+        adjusted = [test substringToIndex:range.location];
+    }
+    
+    cell.albumNameLabel.text = adjusted;//[array objectAtIndex:indexPath.row];
+    
+    cell.artistNameLabel.text = [artistArray objectAtIndex:indexPath.row];
+    
+    // Photos
+    AlbumsPhoto *photo = photosArray[indexPath.row];
+    NSString *photoString = (NSString *) photo;
+    [cell.albumImageView setImageWithURL:[NSURL URLWithString:photoString]];
+    
+    return cell;
+} // eof method facitTableView:cellForRowAtIndexPath.
 
 - (IBAction)clearButton:(id)sender {
 [[self firstGuessLabel] setText:@""];
