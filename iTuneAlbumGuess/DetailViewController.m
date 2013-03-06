@@ -69,7 +69,7 @@
         webData = [[NSMutableData alloc] init];
     }
     
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
+    self.view.backgroundColor = [UIColor top3Background];
     
     // Gör så att firstGuessNumberLabel blir röd från början.
     [[self firstGuessNumberLabel] setTextColor:[UIColor redColor]];

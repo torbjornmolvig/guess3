@@ -21,8 +21,7 @@
 
 -(void)UIAppearance
 {    
-    [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:118/255.0 green:176/255.0 blue:197/255.0 alpha:1]];
-;
+    [[UINavigationBar appearance] setTintColor:[UIColor top3Blue]];
     
     //knappar i normalt läge
     UIImage *image = [UIImage imageNamed:@"blue_button_press.png"];

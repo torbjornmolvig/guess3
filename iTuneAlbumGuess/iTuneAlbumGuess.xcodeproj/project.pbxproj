@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		845CF28916DF8F66007D359F /* AlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 845CF28816DF8F66007D359F /* AlbumCell.m */; };
+		8482042816E73CBD005DF1CE /* UIColor+Top3Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = 8482042716E73CBD005DF1CE /* UIColor+Top3Colors.m */; };
 		849C5AA216E6015F002118E3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 849C5AA116E6015F002118E3 /* Default.png */; };
 		849C5AA416E60162002118E3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 849C5AA316E60162002118E3 /* Default@2x.png */; };
 		849C5AA816E60409002118E3 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 849C5AA716E60409002118E3 /* background.png */; };
@@ -46,6 +47,8 @@
 /* Begin PBXFileReference section */
 		845CF28716DF8F66007D359F /* AlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCell.h; sourceTree = "<group>"; };
 		845CF28816DF8F66007D359F /* AlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCell.m; sourceTree = "<group>"; };
+		8482042616E73CBD005DF1CE /* UIColor+Top3Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Top3Colors.h"; sourceTree = "<group>"; };
+		8482042716E73CBD005DF1CE /* UIColor+Top3Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Top3Colors.m"; sourceTree = "<group>"; };
 		849C5AA116E6015F002118E3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		849C5AA316E60162002118E3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		849C5AA716E60409002118E3 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				84D4F2C416DF6F6200612274 /* AlbumsPhoto.m */,
 				845CF28716DF8F66007D359F /* AlbumCell.h */,
 				845CF28816DF8F66007D359F /* AlbumCell.m */,
+				8482042616E73CBD005DF1CE /* UIColor+Top3Colors.h */,
+				8482042716E73CBD005DF1CE /* UIColor+Top3Colors.m */,
 				84D4F27916DF680A00612274 /* Frameworks */,
 				84D4F27716DF680A00612274 /* Products */,
 				84D4F2A616DF6EDF00612274 /* AFNetworking */,
@@ -312,6 +317,7 @@
 				84D4F2C516DF6F6200612274 /* AlbumsPhoto.m in Sources */,
 				845CF28916DF8F66007D359F /* AlbumCell.m in Sources */,
 				B68A5F7916E4962400307C2F /* ResultViewController.m in Sources */,
+				8482042816E73CBD005DF1CE /* UIColor+Top3Colors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
