@@ -40,7 +40,6 @@
     
     //Ändra textfärgen i UIlabel
     [[UILabel appearance] setTextColor:[UIColor whiteColor]];
-    
 
     
     

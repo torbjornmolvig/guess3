@@ -41,7 +41,8 @@
     {
         [[self firstResultLabel] setTextColor:[UIColor greenColor]];
     }
-
+    
+    //Sätter bakgrundsbilden
     self.view.backgroundColor = [UIColor top3Background];
 }
 

@@ -28,6 +28,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    //Sätter bakgrundsbilden
     self.view.backgroundColor = [UIColor top3Background];
 }
 

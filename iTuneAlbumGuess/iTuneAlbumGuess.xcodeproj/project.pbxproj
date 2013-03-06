@@ -23,7 +23,6 @@
 		84D4F28516DF680A00612274 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84D4F28316DF680A00612274 /* InfoPlist.strings */; };
 		84D4F28716DF680A00612274 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D4F28616DF680A00612274 /* main.m */; };
 		84D4F28B16DF680A00612274 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D4F28A16DF680A00612274 /* AppDelegate.m */; };
-		84D4F28D16DF680A00612274 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D4F28C16DF680A00612274 /* Default.png */; };
 		84D4F29416DF680A00612274 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D4F29216DF680A00612274 /* MainStoryboard.storyboard */; };
 		84D4F29716DF680A00612274 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D4F29616DF680A00612274 /* ViewController.m */; };
 		84D4F2A516DF6CA700612274 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D4F2A416DF6CA700612274 /* DetailViewController.m */; };
@@ -67,7 +66,6 @@
 		84D4F28816DF680A00612274 /* iTuneAlbumGuess-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTuneAlbumGuess-Prefix.pch"; sourceTree = "<group>"; };
 		84D4F28916DF680A00612274 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84D4F28A16DF680A00612274 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84D4F28C16DF680A00612274 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		84D4F29316DF680A00612274 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		84D4F29516DF680A00612274 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		84D4F29616DF680A00612274 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 				84D4F28316DF680A00612274 /* InfoPlist.strings */,
 				84D4F28616DF680A00612274 /* main.m */,
 				84D4F28816DF680A00612274 /* iTuneAlbumGuess-Prefix.pch */,
-				84D4F28C16DF680A00612274 /* Default.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -277,7 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D4F28516DF680A00612274 /* InfoPlist.strings in Resources */,
-				84D4F28D16DF680A00612274 /* Default.png in Resources */,
 				84D4F29416DF680A00612274 /* MainStoryboard.storyboard in Resources */,
 				84C2BDAE16E15F1400704028 /* blue_button_press.png in Resources */,
 				84C2BDAF16E15F1400704028 /* blue_button_pressed.png in Resources */,
