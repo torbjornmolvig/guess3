@@ -91,15 +91,15 @@
     switch (rightAnswerCounterInt)
     {
         case 0:
-            [[self answerCommentsLabel] setText:@"Försök igen!"];
+            [[self answerCommentsLabel] setText:@"Rätt"];
             break;
             
         case 1:
-            [[self answerCommentsLabel] setText:@"På rätt väg!"];
+            [[self answerCommentsLabel] setText:@"Rätt"];
             break;
             
         case 2:
-            [[self answerCommentsLabel] setText:@"Nästan alla rätt!"];
+            [[self answerCommentsLabel] setText:@"Rätt"];
             break;
             
         case 3:

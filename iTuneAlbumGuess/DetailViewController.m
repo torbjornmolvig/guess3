@@ -311,9 +311,18 @@
 
 - (IBAction)facitButton:(id)sender
 {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Varning!"
+                                                    message:@"Vill du verkligen se facit?"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"Nej"
+                                          otherButtonTitles:@"Ja", nil];
+    [alert show];
+    
+    
     facitButtonClicked = YES;
     [[self myTableView] reloadData];
 }
+
 
 - (IBAction)clearButton:(id)sender {
 [[self firstGuessLabel] setText:@""];
