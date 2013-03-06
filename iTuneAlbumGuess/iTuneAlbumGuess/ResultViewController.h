@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ResultViewController : UIViewController
+{
+    int rightAnswerCounterInt;
+}
 
 @property (strong, nonatomic) id firstGuessItem;
 @property (strong, nonatomic) id secondGuessItem;
@@ -19,5 +22,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *firstResultLabel;
 @property (weak, nonatomic) IBOutlet UILabel *secondResultLabel;
 @property (weak, nonatomic) IBOutlet UILabel *thirdResultLabel;
+@property (weak, nonatomic) IBOutlet UILabel *rightAnswerCounterLabel;
+@property (weak, nonatomic) IBOutlet UILabel *answerCommentsLabel;
 
 @end

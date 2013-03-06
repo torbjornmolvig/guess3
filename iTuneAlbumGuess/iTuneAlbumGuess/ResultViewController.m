@@ -51,6 +51,9 @@
     if ([[self.firstResultLabel text] isEqualToString:_albumTitelAndArtistArray[0]])
     {
         [[self firstResultLabel] setTextColor:[UIColor greenColor]];
+        rightAnswerCounterInt++;
+        NSString *string = [NSString stringWithFormat:@"%d", rightAnswerCounterInt];
+        [[self rightAnswerCounterLabel] setText:string];
     }
 }
 
@@ -60,6 +63,9 @@
     if ([[self.secondResultLabel text] isEqualToString:_albumTitelAndArtistArray[1]])
     {
         [[self secondResultLabel] setTextColor:[UIColor greenColor]];
+        rightAnswerCounterInt++;
+        NSString *string = [NSString stringWithFormat:@"%d", rightAnswerCounterInt];
+        [[self rightAnswerCounterLabel] setText:string];
     }
 }
 
@@ -69,7 +75,39 @@
     if ([[self.thirdResultLabel text] isEqualToString:_albumTitelAndArtistArray[2]])
     {
         [[self thirdResultLabel] setTextColor:[UIColor greenColor]];
+        rightAnswerCounterInt++;
+        NSString *string = [NSString stringWithFormat:@"%d", rightAnswerCounterInt];
+        [[self rightAnswerCounterLabel] setText:string];
     }
+    
+    [self performSelector:@selector(answerCommentsMethod) withObject:nil afterDelay:0.75];
+}
+
+- (void)answerCommentsMethod
+{
+    switch (rightAnswerCounterInt)
+    {
+        case 0:
+            [[self answerCommentsLabel] setText:@"Försök igen!"];
+            break;
+            
+        case 1:
+            [[self answerCommentsLabel] setText:@"På rätt väg!"];
+            break;
+            
+        case 2:
+            [[self answerCommentsLabel] setText:@"Nästan alla rätt!"];
+            break;
+            
+        case 3:
+            [[self answerCommentsLabel] setText:@"100% rätt!"];
+            break;
+            
+        default:
+            break;
+    }
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
