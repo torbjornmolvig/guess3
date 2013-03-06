@@ -40,7 +40,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Gissa listans 3 i topp!"
-                                                    message:@"Tryck på de 3 musikalbum som du tror ligger överst på iTunes Top10. Rätt svar får du när listan är sparad."
+                                                    message:@"Tryck på de 3 musikalbum som du tror ligger överst på iTunes Top10."
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
