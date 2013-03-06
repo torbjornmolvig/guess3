@@ -183,7 +183,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="fWP-EO-TTD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
