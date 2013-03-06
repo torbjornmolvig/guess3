@@ -23,8 +23,8 @@
     NSMutableArray *facitPhotoArray;
     NSMutableArray *facitArtistArray;
     Boolean *facitButtonClicked;
-    NSString *guessText;
-    int numberCounter;
+    NSString *guessText;   
+    NSArray *numberCounterArray;
 
     int clickCounter;
 }
@@ -64,6 +64,7 @@
     facitTitleArray = [[NSMutableArray alloc] init];
     facitArtistArray = [[NSMutableArray alloc] init];
     facitPhotoArray = [[NSMutableArray alloc] init];
+    numberCounterArray = [NSArray arrayWithObjects:@"1. ", @"2. ", @"3. ", @"4. ", @"5. ", @"6. ", @"7. ", @"8. ", @"9. ", @"10. ", nil];
     
     [array removeAllObjects];
     
@@ -209,11 +210,7 @@
             adjusted = [test substringToIndex:range.location];
         }
 
-        // [[self firstGuessLabel] setText:[@"1. " stringByAppendingString:guessText]];
-
-        numberCounter++;
-        NSString *temp = [NSString stringWithFormat:@"%d ", numberCounter];
-        temp = [temp stringByAppendingString:adjusted];
+        NSString *temp = [[numberCounterArray objectAtIndex:indexPath.row] stringByAppendingString:adjusted];
         
         cell.albumNameLabel.text = temp;//[array objectAtIndex:indexPath.row];
         
@@ -225,7 +222,6 @@
         [cell.albumImageView setImageWithURL:[NSURL URLWithString:photoString]];
         
         return cell;
-        
     }
     
     else
