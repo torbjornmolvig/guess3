@@ -30,6 +30,18 @@
     
     //Sätter bakgrundsbilden
     self.view.backgroundColor = [UIColor top3Background];
+    
+    
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+
+    [formatter setDateStyle:NSDateFormatterLongStyle];
+    
+    
+    //get the date today
+    NSString *dateToday = [formatter stringFromDate:[NSDate date]];
+    
+    [[self dateLabel] setText:dateToday];
 }
 
 - (void)didReceiveMemoryWarning

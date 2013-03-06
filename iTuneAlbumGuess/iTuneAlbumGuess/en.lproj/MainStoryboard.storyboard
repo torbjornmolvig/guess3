@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tiq-ym-tbM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tiq-ym-tbM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -80,34 +80,47 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="iTunes top10 musikalbum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLo-sN-lKG">
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="0TB-6c-0WR"/>
                                     <constraint firstAttribute="height" constant="43" id="Tmz-DO-zHI"/>
-                                    <constraint firstAttribute="width" constant="259" id="ptZ-ta-5d8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="dagens datum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgL-OM-FST">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="2Y0-9h-fKE"/>
+                                    <constraint firstAttribute="height" constant="43" id="hz3-HY-MnJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fvg-aw-6aE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="154" id="0UZ-mK-FMG"/>
                             <constraint firstItem="k1V-he-Dam" firstAttribute="trailing" secondItem="fvg-aw-6aE" secondAttribute="trailing" type="default" id="21N-Yg-1jb"/>
-                            <constraint firstItem="CLo-sN-lKG" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="2GM-xM-eml"/>
-                            <constraint firstItem="VDA-Ov-jpQ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="104" id="2ot-nB-WUU"/>
+                            <constraint firstItem="dgL-OM-FST" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="23W-Z4-gIE"/>
+                            <constraint firstAttribute="bottom" secondItem="UYG-jy-aMn" secondAttribute="bottom" constant="89" id="8Cb-zB-S8H"/>
                             <constraint firstItem="k1V-he-Dam" firstAttribute="leading" secondItem="fvg-aw-6aE" secondAttribute="leading" type="default" id="EdB-dj-fYy"/>
-                            <constraint firstAttribute="bottom" secondItem="UYG-jy-aMn" secondAttribute="bottom" constant="76" id="G0e-6a-1tl"/>
                             <constraint firstItem="VDA-Ov-jpQ" firstAttribute="leading" secondItem="EDf-Nc-coK" secondAttribute="leading" type="default" id="JAe-LK-g7i"/>
-                            <constraint firstAttribute="bottom" secondItem="k1V-he-Dam" secondAttribute="bottom" constant="137" id="OLi-7i-G2w"/>
+                            <constraint firstAttribute="bottom" secondItem="k1V-he-Dam" secondAttribute="bottom" constant="150" id="Jek-3Y-tjb"/>
+                            <constraint firstItem="dgL-OM-FST" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="136" id="NH3-z3-XuV"/>
                             <constraint firstItem="VDA-Ov-jpQ" firstAttribute="trailing" secondItem="EDf-Nc-coK" secondAttribute="trailing" type="default" id="Rum-oj-Lsi"/>
-                            <constraint firstItem="EDf-Nc-coK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="69" id="Urf-SR-eiC"/>
                             <constraint firstItem="k1V-he-Dam" firstAttribute="leading" secondItem="UYG-jy-aMn" secondAttribute="leading" type="default" id="XD0-dJ-Ud8"/>
-                            <constraint firstItem="CLo-sN-lKG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="29" id="dsj-01-JUQ"/>
-                            <constraint firstItem="EDf-Nc-coK" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="53" id="g1Z-Mr-Wtp"/>
+                            <constraint firstItem="CLo-sN-lKG" firstAttribute="centerX" secondItem="EDf-Nc-coK" secondAttribute="centerX" type="default" id="d4V-iC-NgD"/>
                             <constraint firstItem="VDA-Ov-jpQ" firstAttribute="centerX" secondItem="fvg-aw-6aE" secondAttribute="centerX" type="default" id="lYs-BW-ED0"/>
-                            <constraint firstItem="fvg-aw-6aE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="167" id="oP2-67-k1D"/>
+                            <constraint firstItem="VDA-Ov-jpQ" firstAttribute="top" secondItem="3" secondAttribute="top" constant="91" id="m2A-nX-f42"/>
+                            <constraint firstItem="CLo-sN-lKG" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="32" id="nE9-pi-ozF"/>
+                            <constraint firstItem="CLo-sN-lKG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="24" id="oBl-0l-NNx"/>
+                            <constraint firstItem="EDf-Nc-coK" firstAttribute="top" secondItem="3" secondAttribute="top" constant="56" id="p7o-ps-wcd"/>
                             <constraint firstItem="UYG-jy-aMn" firstAttribute="trailing" secondItem="k1V-he-Dam" secondAttribute="trailing" type="default" id="te7-vk-u9P"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Top3" id="dax-fg-j42"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="dgL-OM-FST" id="52v-jJ-sGe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -478,6 +491,9 @@
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
