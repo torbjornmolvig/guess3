@@ -19,7 +19,10 @@
     NSMutableArray *photosArray;
     NSArray *arrayOfImImage;
     NSMutableArray *artistArray;
-    NSMutableArray *facitArray;
+    NSMutableArray *facitTitleArray;
+    NSMutableArray *facitPhotoArray;
+    NSMutableArray *facitArtistArray;
+    Boolean *facitButtonClicked;
 
     int clickCounter;
 }
@@ -56,7 +59,9 @@
     [[self myTableView] setDataSource:self];
     array = [[NSMutableArray alloc] init];
     artistArray = [[NSMutableArray alloc]init];
-    facitArray = [[NSMutableArray alloc] init];
+    facitTitleArray = [[NSMutableArray alloc] init];
+    facitArtistArray = [[NSMutableArray alloc] init];
+    facitPhotoArray = [[NSMutableArray alloc] init];
     
     [array removeAllObjects];
     
@@ -108,7 +113,20 @@
         NSDictionary *title = [diction objectForKey:@"title"];
         NSString *label4 = [title objectForKey:@"label"];
         
-        [facitArray addObject:label4];
+        [facitTitleArray addObject:label4];
+        
+        // Photos
+        arrayOfImImage = [diction objectForKey:@"im:image"];
+        NSDictionary *label5 = [arrayOfImImage[0] objectForKey:@"label"];
+        
+        [facitPhotoArray addObject:label5];
+        
+        //ArtistName
+        NSDictionary *artist = [diction objectForKey:@"im:artist"];
+        NSString *label6 = [artist objectForKey:@"label"];
+        
+        [facitArtistArray addObject:label6];
+        NSLog(@"artist: %@", facitArtistArray);
     }
     
     // Calling the array´s shufflemethod.
@@ -179,24 +197,50 @@
     
     // Tar bort all text efter bindestreck.
     NSString *adjusted;
-    NSString *rawAlbumNameLabel = [array objectAtIndex:indexPath.row];
-    NSString * test = [NSString stringWithString:rawAlbumNameLabel];
-    NSRange range = [test rangeOfString:@"-"];
-    if (range.length > 0)
+    if (facitButtonClicked)
     {
-       adjusted = [test substringToIndex:range.location];
+        NSString *rawAlbumNameLabel = [facitTitleArray objectAtIndex:indexPath.row];
+        NSString * test = [NSString stringWithString:rawAlbumNameLabel];
+        NSRange range = [test rangeOfString:@"-"];
+        if (range.length > 0)
+        {
+            adjusted = [test substringToIndex:range.location];
+        }
+
+        cell.albumNameLabel.text = adjusted;//[array objectAtIndex:indexPath.row];
+        
+        cell.artistNameLabel.text = [facitArtistArray objectAtIndex:indexPath.row];
+        
+        // Photos
+        AlbumsPhoto *photo = facitPhotoArray[indexPath.row];
+        NSString *photoString = (NSString *) photo;
+        [cell.albumImageView setImageWithURL:[NSURL URLWithString:photoString]];
+        
+        return cell;
+        
     }
     
-    cell.albumNameLabel.text = adjusted;//[array objectAtIndex:indexPath.row];
-
-    cell.artistNameLabel.text = [artistArray objectAtIndex:indexPath.row];
-
-    // Photos
-    AlbumsPhoto *photo = photosArray[indexPath.row];
-    NSString *photoString = (NSString *) photo;
-    [cell.albumImageView setImageWithURL:[NSURL URLWithString:photoString]];
-    
-    return cell;
+    else
+    {
+        NSString *rawAlbumNameLabel = [array objectAtIndex:indexPath.row];
+        NSString * test = [NSString stringWithString:rawAlbumNameLabel];
+        NSRange range = [test rangeOfString:@"-"];
+        if (range.length > 0)
+        {
+            adjusted = [test substringToIndex:range.location];
+        }
+        
+        cell.albumNameLabel.text = adjusted;//[array objectAtIndex:indexPath.row];
+        
+        cell.artistNameLabel.text = [artistArray objectAtIndex:indexPath.row];
+        
+        // Photos
+        AlbumsPhoto *photo = photosArray[indexPath.row];
+        NSString *photoString = (NSString *) photo;
+        [cell.albumImageView setImageWithURL:[NSURL URLWithString:photoString]];
+        
+        return cell;
+    }
 }
 
 // När ett album är klickat/valt ska det skrivas ut i guessLabel:arna.
@@ -245,51 +289,15 @@
         rvc.firstGuessItem = [[self firstGuessLabel] text];
         rvc.secondGuessItem = [[self secondGuessLabel] text];
         rvc.thirdGuessItem = [[self thirdGuessLabel] text];
-        rvc.albumTitelAndArtistArray = facitArray;
+        rvc.albumTitelAndArtistArray = facitTitleArray;
     }
 }
 
 - (IBAction)facitButton:(id)sender
 {
-    [self facitTableView:<#(UITableView *)#> cellForRowAtIndexPath:<#(NSIndexPath *)#>]
-} // eof method facitButton.
-
-- (UITableViewCell *)facitTableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    AlbumCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (!cell)
-    {
-        cell = [[AlbumCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
-    
-    UIView *bgColorView = [[UIView alloc] init];
-    [bgColorView setBackgroundColor:[UIColor colorWithRed:2/255.0 green:38/255.0 blue:52/255.0 alpha:1]];
-    //       [bgColorView setBackgroundColor:[UIColor blackColor]];
-    [cell setSelectedBackgroundView:bgColorView];
-    
-    // Tar bort all text efter bindestreck.
-    NSString *adjusted;
-    NSString *rawAlbumNameLabel = [array objectAtIndex:indexPath.row];
-    NSString * test = [NSString stringWithString:rawAlbumNameLabel];
-    NSRange range = [test rangeOfString:@"-"];
-    if (range.length > 0)
-    {
-        adjusted = [test substringToIndex:range.location];
-    }
-    
-    cell.albumNameLabel.text = adjusted;//[array objectAtIndex:indexPath.row];
-    
-    cell.artistNameLabel.text = [artistArray objectAtIndex:indexPath.row];
-    
-    // Photos
-    AlbumsPhoto *photo = photosArray[indexPath.row];
-    NSString *photoString = (NSString *) photo;
-    [cell.albumImageView setImageWithURL:[NSURL URLWithString:photoString]];
-    
-    return cell;
-} // eof method facitTableView:cellForRowAtIndexPath.
+    facitButtonClicked = YES;
+    [[self myTableView] reloadData];
+}
 
 - (IBAction)clearButton:(id)sender {
 [[self firstGuessLabel] setText:@""];

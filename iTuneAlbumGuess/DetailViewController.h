@@ -26,6 +26,4 @@
 
 - (IBAction)clearButton:(id)sender;
 
-
-
 @end
