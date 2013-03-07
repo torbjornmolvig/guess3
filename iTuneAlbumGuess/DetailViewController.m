@@ -309,14 +309,22 @@
 {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Varning!"
                                                     message:@"Vill du verkligen se facit?"
-                                                   delegate:nil
+                                                   delegate:self
                                           cancelButtonTitle:@"Nej"
                                           otherButtonTitles:@"Ja", nil];
     [alert show];
     
     
-    facitButtonClicked = YES;
-    [[self myTableView] reloadData];
+    
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        
+        facitButtonClicked = YES;
+        [[self myTableView] reloadData];
+    }
 }
 
 

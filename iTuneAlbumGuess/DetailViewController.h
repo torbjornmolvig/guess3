@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AlbumsPhoto.h"
 
-@interface DetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, NSURLConnectionDataDelegate>
+@interface DetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, NSURLConnectionDataDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) id countryItem;
 
