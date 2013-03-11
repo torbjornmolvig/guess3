@@ -11,6 +11,8 @@
 @interface UIColor (Top3Colors)
 
 +(UIColor *) top3Blue;
++(UIColor *) top3DarkBlue;
 +(UIColor *) top3Background;
++(UIColor *) top3BackgroundDark;
 
 @end

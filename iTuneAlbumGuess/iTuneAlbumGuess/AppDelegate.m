@@ -39,13 +39,9 @@
     [[UIButton appearance] setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     //Ändra textfärgen i UIlabel
-    [[UILabel appearance] setTextColor:[UIColor whiteColor]];
+    [[UILabel appearance] setTextColor:[UIColor whiteColor]]; 
 
     
-    
-    [[UITableView appearance] setBackgroundColor:[UIColor colorWithRed:2/255.0 green:38/255.0 blue:52/255.0 alpha:1]];
-    
-
 
 
     

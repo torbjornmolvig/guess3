@@ -80,6 +80,10 @@
     //Sätter bakgrundsbilden
     self.view.backgroundColor = [UIColor top3Background];
     
+    //Sätter en halvtransparent bakgrund under tableViewn
+    self.backgroundImageView.backgroundColor = [UIColor top3DarkBlue];
+    self.backgroundImageView.alpha = 0.7;
+    
     // Gör så att firstGuessNumberLabel blir röd från början.
     [[self firstGuessNumberLabel] setTextColor:[UIColor redColor]];
 }
@@ -194,9 +198,11 @@
     }
     
     UIView *bgColorView = [[UIView alloc] init];
-    [bgColorView setBackgroundColor:[UIColor top3Blue]];
+    [bgColorView setBackgroundColor:[UIColor top3DarkBlue]];
+    
 //       [bgColorView setBackgroundColor:[UIColor orangeColor]];
     [cell setSelectedBackgroundView:bgColorView];
+    
     
     // Tar bort all text efter bindestreck.
     NSString *adjusted;
@@ -246,6 +252,7 @@
         return cell;
     }
 }
+
 
 // När ett album är klickat/valt ska det skrivas ut i guessLabel:arna.
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

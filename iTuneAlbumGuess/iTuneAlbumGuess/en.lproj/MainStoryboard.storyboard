@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tiq-ym-tbM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tiq-ym-tbM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -246,9 +246,14 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SoF-iL-faE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="oc8-j1-Ilv"/>
+                                </constraints>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Yhj-e3-j6V">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="277" id="Kz7-4Z-Ovi"/>
+                                    <constraint firstAttribute="height" constant="277" id="JiN-1h-tfj"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" rowHeight="63" id="yhI-En-H7b" customClass="AlbumCell">
@@ -384,29 +389,33 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iqQ-py-hpd" firstAttribute="top" secondItem="gda-Xi-iIU" secondAttribute="top" type="default" id="0HQ-uj-lJU"/>
+                            <constraint firstItem="gda-Xi-iIU" firstAttribute="top" secondItem="iqQ-py-hpd" secondAttribute="top" type="default" id="07g-lZ-oYN"/>
+                            <constraint firstItem="OWx-B4-G4g" firstAttribute="top" secondItem="Azc-B7-Zah" secondAttribute="top" type="default" id="2GP-bZ-BAo"/>
                             <constraint firstItem="nfe-oW-aRS" firstAttribute="leading" secondItem="ULb-IJ-JRg" secondAttribute="leading" constant="52" id="2dC-rE-DTO"/>
+                            <constraint firstItem="SoF-iL-faE" firstAttribute="trailing" secondItem="ULb-IJ-JRg" secondAttribute="trailing" type="default" id="2xu-MB-9WK"/>
                             <constraint firstItem="Trl-4e-d6U" firstAttribute="leading" secondItem="ULb-IJ-JRg" secondAttribute="leading" constant="13" id="7hS-Xt-Iib"/>
                             <constraint firstItem="Yhj-e3-j6V" firstAttribute="top" secondItem="ULb-IJ-JRg" secondAttribute="top" type="default" id="8Ln-no-2Ld"/>
-                            <constraint firstItem="Ixg-E2-IK6" firstAttribute="leading" secondItem="ULb-IJ-JRg" secondAttribute="leading" constant="35" id="BVe-yy-Kcj"/>
+                            <constraint firstItem="SoF-iL-faE" firstAttribute="leading" secondItem="ULb-IJ-JRg" secondAttribute="leading" type="default" id="AID-L9-GLV"/>
+                            <constraint firstItem="Ixg-E2-IK6" firstAttribute="bottom" secondItem="Trl-4e-d6U" secondAttribute="bottom" type="default" id="Ao3-mU-Jty"/>
                             <constraint firstItem="gda-Xi-iIU" firstAttribute="leading" secondItem="OWx-B4-G4g" secondAttribute="leading" type="default" id="EmO-mj-Hc8"/>
-                            <constraint firstAttribute="bottom" secondItem="OWx-B4-G4g" secondAttribute="bottom" constant="72" id="Hfs-Zj-YPJ"/>
-                            <constraint firstItem="Ixg-E2-IK6" firstAttribute="bottom" secondItem="Trl-4e-d6U" secondAttribute="bottom" type="default" id="J57-9P-FdR"/>
-                            <constraint firstItem="Ixg-E2-IK6" firstAttribute="leading" secondItem="iqQ-py-hpd" secondAttribute="leading" type="default" id="L5G-kA-UTk"/>
-                            <constraint firstAttribute="bottom" secondItem="nfe-oW-aRS" secondAttribute="bottom" constant="11" id="LPi-Ck-bhC"/>
-                            <constraint firstItem="iqQ-py-hpd" firstAttribute="trailing" secondItem="Ixg-E2-IK6" secondAttribute="trailing" type="default" id="M6w-Me-aP4"/>
+                            <constraint firstAttribute="bottom" secondItem="OWx-B4-G4g" secondAttribute="bottom" constant="72" id="O9G-Do-epQ"/>
                             <constraint firstItem="Trl-4e-d6U" firstAttribute="trailing" secondItem="gda-Xi-iIU" secondAttribute="trailing" type="default" id="QOA-68-s3W"/>
                             <constraint firstItem="iqQ-py-hpd" firstAttribute="trailing" secondItem="Azc-B7-Zah" secondAttribute="trailing" type="default" id="QU3-XC-bx7"/>
                             <constraint firstItem="iqQ-py-hpd" firstAttribute="bottom" secondItem="gda-Xi-iIU" secondAttribute="bottom" type="default" id="U4y-3l-Qmq"/>
+                            <constraint firstItem="Ixg-E2-IK6" firstAttribute="top" secondItem="Yhj-e3-j6V" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="VBn-W7-AS9"/>
                             <constraint firstItem="Azc-B7-Zah" firstAttribute="bottom" secondItem="OWx-B4-G4g" secondAttribute="bottom" type="default" id="aR7-d0-li9"/>
                             <constraint firstAttribute="trailing" secondItem="TwN-5r-3GF" secondAttribute="trailing" constant="59" id="cUq-ag-brw"/>
                             <constraint firstItem="gda-Xi-iIU" firstAttribute="trailing" secondItem="OWx-B4-G4g" secondAttribute="trailing" type="default" id="coV-lu-IJp"/>
+                            <constraint firstAttribute="bottom" secondItem="gda-Xi-iIU" secondAttribute="bottom" constant="91" id="d3E-qf-RJz"/>
+                            <constraint firstItem="Ixg-E2-IK6" firstAttribute="leading" secondItem="iqQ-py-hpd" secondAttribute="leading" type="default" id="eU0-4n-GtQ"/>
+                            <constraint firstItem="Trl-4e-d6U" firstAttribute="top" secondItem="SoF-iL-faE" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ebg-Hf-uaU"/>
+                            <constraint firstItem="Ixg-E2-IK6" firstAttribute="leading" secondItem="ULb-IJ-JRg" secondAttribute="leading" constant="35" id="guJ-48-jit"/>
                             <constraint firstItem="TwN-5r-3GF" firstAttribute="bottom" secondItem="nfe-oW-aRS" secondAttribute="bottom" type="default" id="hVd-SD-ucl"/>
                             <constraint firstItem="Yhj-e3-j6V" firstAttribute="trailing" secondItem="ULb-IJ-JRg" secondAttribute="trailing" type="default" id="kLq-PS-PQe"/>
-                            <constraint firstAttribute="bottom" secondItem="gda-Xi-iIU" secondAttribute="bottom" constant="91" id="r9I-HU-zaI"/>
+                            <constraint firstAttribute="bottom" secondItem="nfe-oW-aRS" secondAttribute="bottom" constant="11" id="p2W-7Z-xi0"/>
+                            <constraint firstItem="Ixg-E2-IK6" firstAttribute="trailing" secondItem="iqQ-py-hpd" secondAttribute="trailing" type="default" id="q34-Vs-yp9"/>
+                            <constraint firstItem="TwN-5r-3GF" firstAttribute="baseline" secondItem="nfe-oW-aRS" secondAttribute="baseline" type="default" id="qMN-vs-iIa"/>
                             <constraint firstItem="iqQ-py-hpd" firstAttribute="leading" secondItem="Azc-B7-Zah" secondAttribute="leading" type="default" id="u8p-kF-7Rc"/>
-                            <constraint firstItem="Azc-B7-Zah" firstAttribute="top" secondItem="OWx-B4-G4g" secondAttribute="top" type="default" id="vTs-Cl-aIt"/>
-                            <constraint firstItem="Ixg-E2-IK6" firstAttribute="top" secondItem="Yhj-e3-j6V" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="wxI-2Z-Fyv"/>
                             <constraint firstItem="nfe-oW-aRS" firstAttribute="top" secondItem="TwN-5r-3GF" secondAttribute="top" type="default" id="xql-Bn-qC7"/>
                             <constraint firstItem="Yhj-e3-j6V" firstAttribute="leading" secondItem="ULb-IJ-JRg" secondAttribute="leading" type="default" id="yKU-qh-5Vu"/>
                             <constraint firstItem="Trl-4e-d6U" firstAttribute="leading" secondItem="gda-Xi-iIU" secondAttribute="leading" type="default" id="yLh-qw-brg"/>
@@ -421,6 +430,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="backgroundImageView" destination="SoF-iL-faE" id="qqh-3j-Lrc"/>
                         <outlet property="firstGuessLabel" destination="Ixg-E2-IK6" id="qZq-Bi-Y9f"/>
                         <outlet property="firstGuessNumberLabel" destination="Trl-4e-d6U" id="ri6-cH-JWY"/>
                         <outlet property="myTableView" destination="Yhj-e3-j6V" id="0uc-fV-asF"/>
@@ -467,6 +477,7 @@
             <relationships>
                 <relationship kind="action" name="clearButton:"/>
                 <relationship kind="action" name="facitButton:"/>
+                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="firstGuessLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="firstGuessNumberLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="myTableView" candidateClass="UITableView"/>
