@@ -57,7 +57,7 @@
 		84A048F716E61B2F0073131E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		84C2BDAC16E15F1400704028 /* blue_button_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_button_press.png; sourceTree = "<group>"; };
 		84C2BDAD16E15F1400704028 /* blue_button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_button_pressed.png; sourceTree = "<group>"; };
-		84D4F27616DF680A00612274 /* iTuneAlbumGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTuneAlbumGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D4F27616DF680A00612274 /* Top3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Top3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D4F27A16DF680A00612274 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84D4F27C16DF680A00612274 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84D4F27E16DF680A00612274 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -152,7 +152,7 @@
 		84D4F27716DF680A00612274 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84D4F27616DF680A00612274 /* iTuneAlbumGuess.app */,
+				84D4F27616DF680A00612274 /* Top3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,7 +239,7 @@
 			);
 			name = iTuneAlbumGuess;
 			productName = iTuneAlbumGuess;
-			productReference = 84D4F27616DF680A00612274 /* iTuneAlbumGuess.app */;
+			productReference = 84D4F27616DF680A00612274 /* Top3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -396,7 +396,7 @@
 				GCC_PREFIX_HEADER = "iTuneAlbumGuess/iTuneAlbumGuess-Prefix.pch";
 				INFOPLIST_FILE = "iTuneAlbumGuess/iTuneAlbumGuess-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Top3;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,7 +408,7 @@
 				GCC_PREFIX_HEADER = "iTuneAlbumGuess/iTuneAlbumGuess-Prefix.pch";
 				INFOPLIST_FILE = "iTuneAlbumGuess/iTuneAlbumGuess-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Top3;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
