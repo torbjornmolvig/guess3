@@ -46,6 +46,9 @@
     
     //Sätter bakgrundsbilden
     self.view.backgroundColor = [UIColor top3Background];
+    //Sätter rubrikens font
+    [self.yourGuessLabel setFont:[UIFont fontWithName:@"coolvetica" size:35]];
+    
 }
 
 -(void)labelOne

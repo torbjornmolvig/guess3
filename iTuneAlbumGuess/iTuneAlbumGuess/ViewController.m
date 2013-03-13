@@ -31,7 +31,9 @@
     //Sätter bakgrundsbilden
     self.view.backgroundColor = [UIColor top3Background];
     
-    
+    //Sätter rubrikens font
+    [self.guessTheListLabel setFont:[UIFont fontWithName:@"coolvetica" size:40]];
+    [self.threeInTopLabel setFont:[UIFont fontWithName:@"coolvetica" size:40]];
     
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
 
@@ -43,6 +45,7 @@
     
     [[self dateLabel] setText:dateToday];
 }
+
 
 - (void)didReceiveMemoryWarning
 {

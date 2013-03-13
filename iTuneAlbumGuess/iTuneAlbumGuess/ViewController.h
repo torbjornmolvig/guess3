@@ -13,5 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *guessTheListLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *threeInTopLabel;
 
 @end

@@ -24,5 +24,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *thirdResultLabel;
 @property (weak, nonatomic) IBOutlet UILabel *rightAnswerCounterLabel;
 @property (weak, nonatomic) IBOutlet UILabel *answerCommentsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yourGuessLabel;
 
 @end

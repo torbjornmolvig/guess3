@@ -23,6 +23,7 @@
 {    
     [[UINavigationBar appearance] setTintColor:[UIColor top3Blue]];
     
+
     //knappar i normalt läge
     UIImage *image = [UIImage imageNamed:@"blue_button_press.png"];
     image = [image stretchableImageWithLeftCapWidth:11 topCapHeight:11];

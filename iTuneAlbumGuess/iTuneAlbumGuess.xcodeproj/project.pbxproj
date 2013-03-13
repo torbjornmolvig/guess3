@@ -18,6 +18,8 @@
 		84A048F816E61B2F0073131E /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A048F716E61B2F0073131E /* icon@2x.png */; };
 		84C2BDAE16E15F1400704028 /* blue_button_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C2BDAC16E15F1400704028 /* blue_button_press.png */; };
 		84C2BDAF16E15F1400704028 /* blue_button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C2BDAD16E15F1400704028 /* blue_button_pressed.png */; };
+		84CEAB3A16F08B3C00D72AC6 /* Destroyed Aero.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84CEAB3916F08AF400D72AC6 /* Destroyed Aero.ttf */; };
+		84CEAB3E16F0934E00D72AC6 /* coolvetica rg.otf in Resources */ = {isa = PBXBuildFile; fileRef = 84CEAB3D16F0931900D72AC6 /* coolvetica rg.otf */; };
 		84D4F27B16DF680A00612274 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D4F27A16DF680A00612274 /* UIKit.framework */; };
 		84D4F27D16DF680A00612274 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D4F27C16DF680A00612274 /* Foundation.framework */; };
 		84D4F27F16DF680A00612274 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D4F27E16DF680A00612274 /* CoreGraphics.framework */; };
@@ -57,6 +59,8 @@
 		84A048F716E61B2F0073131E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		84C2BDAC16E15F1400704028 /* blue_button_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_button_press.png; sourceTree = "<group>"; };
 		84C2BDAD16E15F1400704028 /* blue_button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_button_pressed.png; sourceTree = "<group>"; };
+		84CEAB3916F08AF400D72AC6 /* Destroyed Aero.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Destroyed Aero.ttf"; sourceTree = "<group>"; };
+		84CEAB3D16F0931900D72AC6 /* coolvetica rg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "coolvetica rg.otf"; sourceTree = "<group>"; };
 		84D4F27616DF680A00612274 /* Top3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Top3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D4F27A16DF680A00612274 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84D4F27C16DF680A00612274 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -187,6 +191,8 @@
 		84D4F28116DF680A00612274 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84CEAB3D16F0931900D72AC6 /* coolvetica rg.otf */,
+				84CEAB3916F08AF400D72AC6 /* Destroyed Aero.ttf */,
 				84C2BDA916E15EB100704028 /* Images */,
 				84D4F28216DF680A00612274 /* iTuneAlbumGuess-Info.plist */,
 				84D4F28316DF680A00612274 /* InfoPlist.strings */,
@@ -273,6 +279,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CEAB3E16F0934E00D72AC6 /* coolvetica rg.otf in Resources */,
+				84CEAB3A16F08B3C00D72AC6 /* Destroyed Aero.ttf in Resources */,
 				84D4F28516DF680A00612274 /* InfoPlist.strings in Resources */,
 				84D4F29416DF680A00612274 /* MainStoryboard.storyboard in Resources */,
 				84C2BDAE16E15F1400704028 /* blue_button_press.png in Resources */,

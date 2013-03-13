@@ -219,7 +219,7 @@
 
         NSString *temp = [[numberCounterArray objectAtIndex:indexPath.row] stringByAppendingString:adjusted];
         
-        cell.albumNameLabel.text = temp;//[array objectAtIndex:indexPath.row];
+        cell.albumNameLabel.text = temp;//[array objectAtIndex:indexPath.row];        
         
         cell.artistNameLabel.text = [facitArtistArray objectAtIndex:indexPath.row];
         
