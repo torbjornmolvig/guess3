@@ -65,10 +65,10 @@
 		84D4F27A16DF680A00612274 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84D4F27C16DF680A00612274 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84D4F27E16DF680A00612274 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		84D4F28216DF680A00612274 /* iTuneAlbumGuess-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iTuneAlbumGuess-Info.plist"; sourceTree = "<group>"; };
+		84D4F28216DF680A00612274 /* Top3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Top3-Info.plist"; sourceTree = "<group>"; };
 		84D4F28416DF680A00612274 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84D4F28616DF680A00612274 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		84D4F28816DF680A00612274 /* iTuneAlbumGuess-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTuneAlbumGuess-Prefix.pch"; sourceTree = "<group>"; };
+		84D4F28816DF680A00612274 /* Top3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Top3-Prefix.pch"; sourceTree = "<group>"; };
 		84D4F28916DF680A00612274 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84D4F28A16DF680A00612274 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		84D4F29316DF680A00612274 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -194,10 +194,10 @@
 				84CEAB3D16F0931900D72AC6 /* coolvetica rg.otf */,
 				84CEAB3916F08AF400D72AC6 /* Destroyed Aero.ttf */,
 				84C2BDA916E15EB100704028 /* Images */,
-				84D4F28216DF680A00612274 /* iTuneAlbumGuess-Info.plist */,
+				84D4F28216DF680A00612274 /* Top3-Info.plist */,
 				84D4F28316DF680A00612274 /* InfoPlist.strings */,
 				84D4F28616DF680A00612274 /* main.m */,
-				84D4F28816DF680A00612274 /* iTuneAlbumGuess-Prefix.pch */,
+				84D4F28816DF680A00612274 /* Top3-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -231,9 +231,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84D4F27516DF680A00612274 /* iTuneAlbumGuess */ = {
+		84D4F27516DF680A00612274 /* Top3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84D4F29A16DF680A00612274 /* Build configuration list for PBXNativeTarget "iTuneAlbumGuess" */;
+			buildConfigurationList = 84D4F29A16DF680A00612274 /* Build configuration list for PBXNativeTarget "Top3" */;
 			buildPhases = (
 				84D4F27216DF680A00612274 /* Sources */,
 				84D4F27316DF680A00612274 /* Frameworks */,
@@ -243,7 +243,7 @@
 			);
 			dependencies = (
 			);
-			name = iTuneAlbumGuess;
+			name = Top3;
 			productName = iTuneAlbumGuess;
 			productReference = 84D4F27616DF680A00612274 /* Top3.app */;
 			productType = "com.apple.product-type.application";
@@ -257,7 +257,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Admin;
 			};
-			buildConfigurationList = 84D4F27016DF680A00612274 /* Build configuration list for PBXProject "iTuneAlbumGuess" */;
+			buildConfigurationList = 84D4F27016DF680A00612274 /* Build configuration list for PBXProject "Top3" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -269,7 +269,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84D4F27516DF680A00612274 /* iTuneAlbumGuess */,
+				84D4F27516DF680A00612274 /* Top3 */,
 			);
 		};
 /* End PBXProject section */
@@ -401,8 +401,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iTuneAlbumGuess/iTuneAlbumGuess-Prefix.pch";
-				INFOPLIST_FILE = "iTuneAlbumGuess/iTuneAlbumGuess-Info.plist";
+				GCC_PREFIX_HEADER = "iTuneAlbumGuess/Top3-Prefix.pch";
+				INFOPLIST_FILE = "iTuneAlbumGuess/Top3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = Top3;
 				WRAPPER_EXTENSION = app;
@@ -413,8 +413,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iTuneAlbumGuess/iTuneAlbumGuess-Prefix.pch";
-				INFOPLIST_FILE = "iTuneAlbumGuess/iTuneAlbumGuess-Info.plist";
+				GCC_PREFIX_HEADER = "iTuneAlbumGuess/Top3-Prefix.pch";
+				INFOPLIST_FILE = "iTuneAlbumGuess/Top3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = Top3;
 				WRAPPER_EXTENSION = app;
@@ -424,7 +424,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84D4F27016DF680A00612274 /* Build configuration list for PBXProject "iTuneAlbumGuess" */ = {
+		84D4F27016DF680A00612274 /* Build configuration list for PBXProject "Top3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84D4F29816DF680A00612274 /* Debug */,
@@ -433,7 +433,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84D4F29A16DF680A00612274 /* Build configuration list for PBXNativeTarget "iTuneAlbumGuess" */ = {
+		84D4F29A16DF680A00612274 /* Build configuration list for PBXNativeTarget "Top3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84D4F29B16DF680A00612274 /* Debug */,

@@ -473,53 +473,6 @@
             <point key="canvasLocation" x="16" y="706"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="AlbumCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlbumCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="albumImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="albumNameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="artistNameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="clearButton:"/>
-                <relationship kind="action" name="facitButton:"/>
-                <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="firstGuessLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="firstGuessNumberLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="myTableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="secondGuessLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="secondGuessNumberLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="thirdGuessLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="thirdGuessNumnberLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ResultViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ResultViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="answerCommentsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="firstResultLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="rightAnswerCounterLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="secondResultLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="thirdResultLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="yourGuessLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="dateLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="guessTheListLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="threeInTopLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
